@@ -1,0 +1,213 @@
+body {
+    background: #eee;
+}
+
+#moviesCountersContainer {
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 90px;
+    background: #ddd;
+    position: absolute;
+    z-index: 2;
+    top: 2%;
+    right: 1%;
+    box-shadow: 1px 1px 5px #000;
+}
+
+#moviesCountersContainer p {
+    text-align: center;
+}
+
+.moviesCounter {
+    font-weight: bold;
+}
+
+#moviesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#moviesList li {
+    background-color: #ddd;
+    padding: 10px 46px 10px 10px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px #000;
+}
+
+#moviesList li:hover {
+    background-color: #ccc;
+}
+
+#moviesListContainer {
+    margin: 100px auto 0;
+    width: 75%;
+}
+
+.movieTitle {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: blueviolet;
+    padding: 5px;
+}
+
+.movieYear,
+.movieGenre {
+    display: inline-block;
+    font-style: italic;
+    padding: 3px;
+}
+
+.movieSummary {
+    display: block;
+}
+
+.movieSeen {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 5px #000;
+}
+
+.true {
+    background-color: lightgreen;
+}
+
+.true:hover {
+    background-color: #2EC32E;
+}
+
+.true::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    position: relative;
+    top: 8px;
+    left: -8px;
+    transform: rotate(-45deg);
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+}
+
+.true::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 22px;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    transform: rotate(45deg);
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+}
+
+.false {
+    background-color: lightcoral;
+}
+
+.false:hover {
+    background-color: #A72C2C;
+}
+
+.false::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 28px;
+    position: relative;
+    top: 4px;
+    left: -2px;
+    transform: rotate(-45deg);
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.false::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 28px;
+    position: relative;
+    top: 4px;
+    left: 2px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.seenMovieButton {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+}
+
+#formContainer {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#formContainer .inputGroup * {
+    vertical-align: text-top;
+    margin: 10px;
+}
+
+#formContainer .inputGroup label {
+    display: inline-block;
+    width: 150px;
+}
+
+#formContainer .inputGroup input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-image: none;
+}
+
+#formContainer .inputGroup textarea {
+    width: 300px;
+    resize: none;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-image: none;
+}
+
+#formContainer button[type="submit"] {
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #2EC32E;
+    border: 1px solid rgb(8, 71, 8);
+}
+
+#alertContainer .alertMessage {
+    width: 500px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-weight: 500;
+    background-color: rgba(207, 73, 73, 0.658);
+    border: 1px solid rgba(117, 22, 22, 0.685);
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.moviesButton a {
+    padding: 12px;
+    background-color: white;
+    border-radius: 0 0 6px 6px;
+    border: 1px solid black;
+    text-decoration: none;
+}
